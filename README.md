@@ -1,4 +1,4 @@
-Base JAX-RS Api [![Build Status](https://travis-ci.org/sti-uff/hermes-message.png?branch=master)](https://travis-ci.org/sti-uff/hermes-message)
+Base JAX-RS Api [![Build Status](https://travis-ci.org/dancastellani/jax-rs-base-api.png?branch=master)](https://travis-ci.org/dancastellani/jax-rs-base-api)
 =============== 
 This is a base code to improve implementation velocity to implement Jax-RS APIs. 
 With tt you get all default REST routes for your API just extending the `BaseApi` class and implementing some methods.
