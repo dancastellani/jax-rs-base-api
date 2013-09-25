@@ -29,11 +29,30 @@ How to use it?
 Yout API must extend the abastract class [`BaseApi`](https://github.com/dancastellani/jax-rs-base-api/blob/master/src/main/java/br/danielcastellani/jaxrsbase/api/BaseApi.java), implementing its abstract methods. 
 Also, the exceptions you want to throw in API must extend `ApiException`.
 
+__Maven Dependency__
+Add to your pom.xml:
+<pre>
+  &lt;dependency>
+    &lt;groupId>br.danielcastellani&lt;/groupId>
+    &lt;artifactId>base-jax-rs-api&lt;/artifactId>
+    &lt;version>1.0-SNAPSHOT&lt;/version>
+  &lt;/dependency>
+</pre>
+
+__Get Dependency__
+Since it is not on Maven Central, yet, you must run in your machine:
+<pre>
+git clone https://github.com/dancastellani/jax-rs-base-api.git
+cd jax-rs-base-api
+mvn install
+</pre>
+
 How it works?
 ---
 JAX-RS-Base-Api has a abastract class [`BaseApi`](https://github.com/dancastellani/jax-rs-base-api/blob/master/src/main/java/br/danielcastellani/jaxrsbase/api/BaseApi.java) and a exception `ApiException`. 
 The [`BaseApi`](https://github.com/dancastellani/jax-rs-base-api/blob/master/src/main/java/br/danielcastellani/jaxrsbase/api/BaseApi.java) defines the routes above for each API that extends it. 
 Each route calls a abstract method that must be implemented. These methods are:
+
 
 * __list__()
 * __show__(int i)
